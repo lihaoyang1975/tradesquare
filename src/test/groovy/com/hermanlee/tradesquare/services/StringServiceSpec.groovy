@@ -1,3 +1,5 @@
+package com.hermanlee.tradesquare.services
+
 import com.hermanlee.tradesquare.domain.SearchAndReplaceRequest
 import com.hermanlee.tradesquare.services.StringService
 import spock.lang.Shared

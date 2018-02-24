@@ -1,3 +1,5 @@
+package com.hermanlee.tradesquare.services
+
 import com.hermanlee.tradesquare.domain.Node
 import com.hermanlee.tradesquare.services.NodeService
 import spock.lang.Shared
