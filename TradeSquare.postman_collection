@@ -1,0 +1,215 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TradeSquare",
+		"_postman_id": "fa5972c0-e40e-44d0-57cc-fed9f3fe97b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search and Replace",
+			"request": {
+				"url": "http://localhost:8080/interview/2",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"baseString\":\"I'm not a happy camper because my camping site is ruined by flash flood and I lost all my camping gears\",\n\t\"searchString\":\"camp\",\n\t\"replaceString\":\"fish\",\n\t\"count\":1\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "e5757493-d41d-417c-93f3-ce8a495b3d32",
+					"name": "Search and Replace",
+					"originalRequest": {
+						"url": "http://localhost:8080/interview/2",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"baseString\":\"I'm not a happy camper because my camping site is ruined by flash flood and I lost all my camping gears\",\n\t\"searchString\":\"camp\",\n\t\"replaceString\":\"fish\",\n\t\"count\":1\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 24 Feb 2018 12:01:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 36,
+					"body": "{\"newString\":\"I'm not a happy fisher because my camping site is ruined by flash flood and I lost all my camping gears\",\"foundOccurrences\":1}"
+				}
+			]
+		},
+		{
+			"name": "merge and sort a",
+			"request": {
+				"url": "http://localhost:8080/interview/1/a",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\"val\":-740588371,\"next\":{\"val\":-114775820,\"next\":{\"val\":1261703330,\"next\":{\"val\":-2025414482,\"next\":{\"val\":1507705712,\"next\":null}}}}},\n\t{\"val\":601394455,\"next\":{\"val\":-1178471002,\"next\":{\"val\":-1274407990,\"next\":{\"val\":685610778,\"next\":{\"val\":313530967,\"next\":{\"val\":-1946736677,\"next\":{\"val\":-1879845631,\"next\":null}}}}}}}\n]\n\t\n"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "937ccd88-5a2a-4869-bc2e-67be4692776b",
+					"name": "merge and sort a",
+					"originalRequest": {
+						"url": "http://localhost:8080/interview/1/a",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\"val\":-740588371,\"next\":{\"val\":-114775820,\"next\":{\"val\":1261703330,\"next\":{\"val\":-2025414482,\"next\":{\"val\":1507705712,\"next\":null}}}}},\n\t{\"val\":601394455,\"next\":{\"val\":-1178471002,\"next\":{\"val\":-1274407990,\"next\":{\"val\":685610778,\"next\":{\"val\":313530967,\"next\":{\"val\":-1946736677,\"next\":{\"val\":-1879845631,\"next\":null}}}}}}}\n]\n\t\n"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 24 Feb 2018 12:11:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 226,
+					"body": "{\"val\":-2025414482,\"next\":{\"val\":-1946736677,\"next\":{\"val\":-1879845631,\"next\":{\"val\":-1274407990,\"next\":{\"val\":-1178471002,\"next\":{\"val\":-740588371,\"next\":{\"val\":-114775820,\"next\":{\"val\":313530967,\"next\":{\"val\":601394455,\"next\":{\"val\":685610778,\"next\":{\"val\":1261703330,\"next\":{\"val\":1507705712,\"next\":null}}}}}}}}}}}}"
+				}
+			]
+		},
+		{
+			"name": "merge and sort b",
+			"request": {
+				"url": "http://localhost:8080/interview/1/b",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"val\":-1937098135,\"next\":{\"val\":-1821397264,\"next\":{\"val\":-1357508823,\"next\":{\"val\":-572147950,\"next\":{\"val\":-346523445,\"next\":{\"val\":-170521635,\"next\":{\"val\":171050241,\"next\":{\"val\":339059550,\"next\":{\"val\":566976536,\"next\":{\"val\":802208139,\"next\":{\"val\":1324763091,\"next\":{\"val\":1325393663,\"next\":null}}}}}}}}}}}}\n"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "4b51ea44-253d-4de3-a123-75ebaa00c5b0",
+					"name": "merge and sort b",
+					"originalRequest": {
+						"url": "http://localhost:8080/interview/1/b",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"val\":-1937098135,\"next\":{\"val\":-1821397264,\"next\":{\"val\":-1357508823,\"next\":{\"val\":-572147950,\"next\":{\"val\":-346523445,\"next\":{\"val\":-170521635,\"next\":{\"val\":171050241,\"next\":{\"val\":339059550,\"next\":{\"val\":566976536,\"next\":{\"val\":802208139,\"next\":{\"val\":1324763091,\"next\":{\"val\":1325393663,\"next\":null}}}}}}}}}}}}\n"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 24 Feb 2018 12:11:48 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 34,
+					"body": "{\"val\":-2025414482,\"next\":{\"val\":-1946736677,\"next\":{\"val\":-1937098135,\"next\":{\"val\":-1879845631,\"next\":{\"val\":-1821397264,\"next\":{\"val\":-1357508823,\"next\":{\"val\":-1274407990,\"next\":{\"val\":-1178471002,\"next\":{\"val\":-740588371,\"next\":{\"val\":-572147950,\"next\":{\"val\":-346523445,\"next\":{\"val\":-170521635,\"next\":{\"val\":-114775820,\"next\":{\"val\":171050241,\"next\":{\"val\":313530967,\"next\":{\"val\":339059550,\"next\":{\"val\":566976536,\"next\":{\"val\":601394455,\"next\":{\"val\":685610778,\"next\":{\"val\":802208139,\"next\":{\"val\":1261703330,\"next\":{\"val\":1324763091,\"next\":{\"val\":1325393663,\"next\":{\"val\":1507705712,\"next\":null}}}}}}}}}}}}}}}}}}}}}}}}"
+				}
+			]
+		}
+	]
+}
